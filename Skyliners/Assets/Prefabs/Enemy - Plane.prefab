@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 3463231512743287655}
   - component: {fileID: 6210149833575592602}
   - component: {fileID: -3522839308007209925}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Enemy - Plane
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -81,7 +81,7 @@ SpriteRenderer:
   m_Size: {x: 4.65, y: 3.19}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 0
+  m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
 --- !u!114 &3463231512743287655
