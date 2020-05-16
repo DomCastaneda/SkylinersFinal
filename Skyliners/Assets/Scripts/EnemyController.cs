@@ -39,7 +39,7 @@ public class EnemyController : MonoBehaviour
     void SpawnBullet()
     {
         Vector3 spawnPoint = transform.position;
-        spawnPoint.y -= (bullet.GetComponent<Renderer>().bounds.size.x / 2) * (GetComponent<Renderer>().bounds.size.x / 2); //bullet moving to x position 
+        spawnPoint.x -= (bullet.GetComponent<Renderer>().bounds.size.x / 2) * (GetComponent<Renderer>().bounds.size.x / 2); //bullet moving to x position 
         GameObject.Instantiate(bullet, spawnPoint, transform.rotation);
     }
 
