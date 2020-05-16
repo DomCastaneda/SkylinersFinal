@@ -32,14 +32,14 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
 
-        if (Camera.main.WorldToViewportPoint(transform.position).y < 0)
+        if (Camera.main.WorldToViewportPoint(transform.position).x < 0) //change to x position 
             Destroy(this.gameObject);
     }
 
     void SpawnBullet()
     {
         Vector3 spawnPoint = transform.position;
-        spawnPoint.y -= (bullet.GetComponent<Renderer>().bounds.size.y / 2) * (GetComponent<Renderer>().bounds.size.y / 2);
+        spawnPoint.y -= (bullet.GetComponent<Renderer>().bounds.size.x / 2) * (GetComponent<Renderer>().bounds.size.x / 2); //bullet moving to x position 
         GameObject.Instantiate(bullet, spawnPoint, transform.rotation);
     }
 

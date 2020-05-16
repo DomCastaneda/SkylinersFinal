@@ -35,10 +35,10 @@ public class EnemyManager : MonoBehaviour
 
         //adjust x-axis position
         float dist = (this.transform.position - Camera.main.transform.position).z;
-        float leftBorder = Camera.main.ViewportToWorldPoint(new Vector3(0,0, dist)).x;
-        float rightBorder = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, dist)).x;
+        float leftBorder = Camera.main.ViewportToWorldPoint(new Vector3(0,0, dist)).y; //changed to y boarder 
+        float rightBorder = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, dist)).y;
         Vector3 enemySize = enemy.GetComponent<Renderer>().bounds.size;
-        spawnPoint.x = Mathf.Clamp(spawnPoint.x, leftBorder + enemySize.x / 2, rightBorder - enemySize.x / 2);
+        spawnPoint.y = Mathf.Clamp(spawnPoint.x, leftBorder + enemySize.y / 2, rightBorder - enemySize.y / 2); //Changed from x to y
 
         GameObject.Instantiate(enemy, spawnPoint, new Quaternion(0, 0, 0, 0));
     }
