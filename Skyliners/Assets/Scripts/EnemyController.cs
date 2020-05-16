@@ -19,7 +19,7 @@ public class EnemyController : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        rb.velocity = new Vector2(0, speed);
+        rb.velocity = new Vector2(speed, 0);
 
         timerBullet = 0;
         maxTimerBullet = Random.Range(timerMin, timerMax);
