@@ -30,7 +30,7 @@ public class EnemyManager : MonoBehaviour
     void SpawnEnemy()
     {
         float y = 1.25f;
-        Vector3 spawnPoint = Camera.main.ViewportToWorldPoint(new Vector3(0, Random.Range(0.3f, 1), 0)); // changed to x
+        Vector3 spawnPoint = Camera.main.ViewportToWorldPoint(new Vector3(1.25f, Random.Range(0.3f, 1), 0)); // changed to x
         spawnPoint.z = 0;
 
         //adjust x-axis position
@@ -38,7 +38,7 @@ public class EnemyManager : MonoBehaviour
         float leftBorder = Camera.main.ViewportToWorldPoint(new Vector3(0,0, dist)).y; //changed to y boarder 
         float rightBorder = Camera.main.ViewportToWorldPoint(new Vector3(1, 0, dist)).y;
         Vector3 enemySize = enemy.GetComponent<Renderer>().bounds.size;
-        spawnPoint.x = Mathf.Clamp(spawnPoint.x, leftBorder + enemySize.x / 2, rightBorder - enemySize.x / 2); //Changed from x to y
+        //spawnPoint.x = Mathf.Clamp(spawnPoint.x, leftBorder + enemySize.x / 2, rightBorder - enemySize.x / 2); //Changed from x to y
 
         GameObject.Instantiate(enemy, spawnPoint, new Quaternion(0, 0, 0, 0));
     }
