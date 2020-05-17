@@ -331,7 +331,7 @@ GameObject:
   m_Component:
   - component: {fileID: 782971995}
   - component: {fileID: 782971994}
-  m_Layer: 0
+  m_Layer: 9
   m_Name: EnemyManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -351,8 +351,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   enemy: {fileID: 3462002806054954550, guid: 740536e270f564b4f9758d820861f308, type: 3}
-  timerMin: 5
-  timerMax: 12
+  timerMin: 3
+  timerMax: 7
 --- !u!4 &782971995
 Transform:
   m_ObjectHideFlags: 0
