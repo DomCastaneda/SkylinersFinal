@@ -261,7 +261,7 @@ GameObject:
   - component: {fileID: 809152149}
   - component: {fileID: 809152151}
   - component: {fileID: 809152150}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Tilemap - Interactable
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3258,7 +3258,7 @@ GameObject:
   - component: {fileID: 841331038}
   - component: {fileID: 841331037}
   - component: {fileID: 841331036}
-  m_Layer: 8
+  m_Layer: 10
   m_Name: Player - Red Bird
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3285,7 +3285,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!114 &841331037
 MonoBehaviour:
   m_ObjectHideFlags: 0
