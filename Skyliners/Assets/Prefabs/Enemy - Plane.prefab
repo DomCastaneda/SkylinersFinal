@@ -28,8 +28,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3462002806054954550}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.3728, y: 0.9734, z: 0}
-  m_LocalScale: {x: 0.40937015, y: 0.38961902, z: 0.4105678}
+  m_LocalPosition: {x: -1.438, y: 0.931, z: 0}
+  m_LocalScale: {x: 0.38134167, y: 0.3629428, z: 0.3824573}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
@@ -98,8 +98,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: -1
   bullet: {fileID: 8270283521978107022, guid: 1285b710be1dc4e0bbac065201f9c75d, type: 3}
-  timerMin: 5
-  timerMax: 25
+  timerMin: 3
+  timerMax: 7
   canFireBullets: 1
 --- !u!61 &6210149833575592602
 BoxCollider2D:
@@ -114,7 +114,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.11562991, y: 0.24298382}
+  m_Offset: {x: 0.109968185, y: 0.16397268}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -125,7 +125,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 4.41874, y: 2.7040324}
+  m_Size: {x: 4.4488163, y: 2.8620515}
   m_EdgeRadius: 0
 --- !u!50 &-3522839308007209925
 Rigidbody2D:
