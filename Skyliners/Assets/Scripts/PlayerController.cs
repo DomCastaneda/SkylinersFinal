@@ -7,6 +7,7 @@ public class PlayerController : MonoBehaviour
     public float velocity = 1;
     private Rigidbody2D rb;
 
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,6 +17,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+
         if (Input.GetMouseButtonDown(0))
         {
             //jump
