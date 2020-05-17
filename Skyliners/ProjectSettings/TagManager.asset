@@ -13,11 +13,11 @@ TagManager:
   - UI
   - 
   - 
-  - background
-  - props
-  - 'interactable '
-  - Enemy
   - Player
+  - Enemy
+  - 
+  - 
+  - 
   - 
   - 
   - 
