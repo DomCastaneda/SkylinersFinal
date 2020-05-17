@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6408061939376495622}
   - component: {fileID: 6646330211938029682}
   - component: {fileID: -955679669563191400}
+  - component: {fileID: -7004011267451044563}
   m_Layer: 0
   m_Name: Enemy Bullet Plane
   m_TagString: Untagged
@@ -130,3 +131,16 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.7838463, y: 0.2478056}
   m_EdgeRadius: 0
+--- !u!114 &-7004011267451044563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8270283521978107022}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c280832de50804981b898e8e0edce3f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 0.25
