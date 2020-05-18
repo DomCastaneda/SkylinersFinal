@@ -13,8 +13,12 @@ GameObject:
   - component: {fileID: 2560071867157749705}
   - component: {fileID: 2560071867157749707}
   - component: {fileID: 2560071867157749704}
+<<<<<<< HEAD
   - component: {fileID: 1888479578689396791}
   m_Layer: 13
+=======
+  m_Layer: 9
+>>>>>>> parent of be13dda... animation
   m_Name: Enemy bird grey
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -149,6 +153,7 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 0
+<<<<<<< HEAD
 --- !u!95 &1888479578689396791
 Animator:
   serializedVersion: 3
@@ -168,3 +173,5 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+=======
+>>>>>>> parent of be13dda... animation
