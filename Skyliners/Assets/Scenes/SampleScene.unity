@@ -812,7 +812,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   enemy: {fileID: 3462002806054954550, guid: 740536e270f564b4f9758d820861f308, type: 3}
   timerMin: 3
-  timerMax: 7
+  timerMax: 5
 --- !u!4 &782971995
 Transform:
   m_ObjectHideFlags: 0
