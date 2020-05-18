@@ -839,7 +839,7 @@ GameObject:
   m_Component:
   - component: {fileID: 782971995}
   - component: {fileID: 782971994}
-  m_Layer: 9
+  m_Layer: 0
   m_Name: PlaneManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -30123,7 +30123,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2128188932}
   - component: {fileID: 2128188931}
-  m_Layer: 12
+  m_Layer: 0
   m_Name: HeliManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
