@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    public float velocity = 1;
+    public float velocityUp = 100;
+    public float velocityRight = 1;
     private Rigidbody2D rb;
 
 
@@ -21,7 +22,7 @@ public class PlayerController : MonoBehaviour
         if (Input.GetMouseButtonDown(0))
         {
             //jump
-            rb.velocity = Vector2.up * velocity;
+            rb.velocity = (Vector2.up * velocityUp) + (Vector2.right * velocityRight);
         }
     }
 }
