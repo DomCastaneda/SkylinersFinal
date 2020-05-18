@@ -32,7 +32,7 @@ public class EnemyController : MonoBehaviour
     void Update()
     {
 
-        if (Camera.main.WorldToViewportPoint(transform.position).x < 0) //change to x position 
+        if (Camera.main.WorldToViewportPoint(transform.position).y < 0) //change to x position 
             Destroy(this.gameObject);
     }
 
