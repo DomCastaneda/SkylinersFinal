@@ -14,11 +14,11 @@ TagManager:
   - 
   - 
   - Environment
-  - EnemyPlane
+  - Enemy
   - Player
   - EnemyBullets
-  - EnemyHeli
-  - EnemyBird
+  - Heli
+  - 
   - 
   - 
   - 
