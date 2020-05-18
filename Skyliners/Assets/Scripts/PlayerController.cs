@@ -8,10 +8,16 @@ public class PlayerController : MonoBehaviour
     public float velocityRight = 1;
     private Rigidbody2D rb;
 
+    public AudioClip jumpClip;
+
+    //main audio
+    public AudioClip mainAudio;
+
 
     // Start is called before the first frame update
     void Start()
     {
+        AudioSource.PlayClipAtPoint(mainAudio, transform.position);
         rb = GetComponent<Rigidbody2D>();
     }
 
@@ -23,6 +29,7 @@ public class PlayerController : MonoBehaviour
         {
             //jump
             rb.velocity = (Vector2.up * velocityUp) + (Vector2.right * velocityRight);
+            AudioSource.PlayClipAtPoint(jumpClip, transform.position);
         }
     }
 }
