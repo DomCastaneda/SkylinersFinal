@@ -39,13 +39,18 @@ public class PlayerController : MonoBehaviour
                 rb.velocity = (Vector2.up * velocityUp) + (Vector2.right * velocityRight);
                 AudioSource.PlayClipAtPoint(jumpClip, transform.position);
                 stamText.GetComponent<stamina_controller>().stamina -= 2;
+                stamText.GetComponent<stamina_controller>().UpdateStamina();
             }
+
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
     {
         Destroy(collision.gameObject);
-        stamText.GetComponent<stamina_controller>().stamina-=5;
-        stamText.GetComponent<stamina_controller>().UpdateStamina();
+        if (collision.gameObject.tag == "Enemy")
+        {
+            stamText.GetComponent<stamina_controller>().stamina -= 5;
+            stamText.GetComponent<stamina_controller>().UpdateStamina();
+        }
     }
 }

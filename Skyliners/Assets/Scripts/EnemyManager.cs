@@ -29,7 +29,6 @@ public class EnemyManager : MonoBehaviour
 
     void SpawnEnemy()
     {
-        float y = 1.25f;
         Vector3 spawnPoint = Camera.main.ViewportToWorldPoint(new Vector3(1.25f, Random.Range(0.3f, 1), 0)); // changed to x
         spawnPoint.z = 0;
 
