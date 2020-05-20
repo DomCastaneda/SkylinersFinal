@@ -19,6 +19,9 @@ public class PlayerController : MonoBehaviour
     public bool hasStaminaPotion = false;
     public int potionModAmount = 0;
 
+    public bool hasGemType = false;
+    public int pointAmount = 0;
+
     //main audio
     public AudioClip mainAudio;
 
