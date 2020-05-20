@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
@@ -42,6 +43,10 @@ public class PlayerController : MonoBehaviour
                 stamText.GetComponent<stamina_controller>().UpdateStamina();
             }
 
+        }else if(stamina == 0)
+        {
+
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
