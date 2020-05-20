@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Enemy
   - Coin
+  - Gem
   layers:
   - Default
   - TransparentFX
@@ -21,7 +22,7 @@ TagManager:
   - EnemyBullets
   - Heli
   - Potion
-  - 
+  - Gem
   - 
   - 
   - 

@@ -14,6 +14,7 @@ public class PlayerController : MonoBehaviour
     private Text scoreText;
 
     public int stamina = 100;
+    public int score = 0;
 
     public AudioClip jumpClip;
 
@@ -31,6 +32,7 @@ public class PlayerController : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
 
         stamText = GameObject.Find("StaminaText").GetComponent<Text>();
+        scoreText = GameObject.Find("ScoreText").GetComponent<Text>();
     }
 
     // Update is called once per frame
@@ -67,11 +69,7 @@ public class PlayerController : MonoBehaviour
             stamText.GetComponent<stamina_controller>().stamina -= 5;
             stamText.GetComponent<stamina_controller>().UpdateStamina();
         }
-    }
-
-    private void OnTriggerEnter2D(Collider2D collision)
-    {
-        if (collision.gameObject.CompareTag("Coin"))
+        if (collision.gameObject.tag == "Gem")
         {
             Destroy(collision.gameObject);
             scoreText.GetComponent<ScoreController>().score += 1;

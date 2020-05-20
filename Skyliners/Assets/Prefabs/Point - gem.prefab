@@ -13,9 +13,9 @@ GameObject:
   - component: {fileID: 4969345302647516200}
   - component: {fileID: 3013310002879403877}
   - component: {fileID: 1012402566363203008}
-  m_Layer: 0
+  m_Layer: 14
   m_Name: Point - gem
-  m_TagString: Untagged
+  m_TagString: Gem
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
