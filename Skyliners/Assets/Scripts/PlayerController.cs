@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
 
     private Text stamText;
+    private Text scoreText;
 
     public int stamina = 100;
 
@@ -18,9 +19,6 @@ public class PlayerController : MonoBehaviour
 
     public bool hasStaminaPotion = false;
     public int potionModAmount = 0;
-
-    public bool hasGemType = false;
-    public int pointAmount = 0;
 
     //main audio
     public AudioClip mainAudio;
@@ -68,6 +66,16 @@ public class PlayerController : MonoBehaviour
         {
             stamText.GetComponent<stamina_controller>().stamina -= 5;
             stamText.GetComponent<stamina_controller>().UpdateStamina();
+        }
+    }
+
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.CompareTag("Coin"))
+        {
+            Destroy(collision.gameObject);
+            scoreText.GetComponent<ScoreController>().score += 1;
+            scoreText.GetComponent<ScoreController>().UpdateScore();
         }
     }
 }
