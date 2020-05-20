@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 80027214645974773}
   m_Layer: 11
   m_Name: Enemy Bird grey
-  m_TagString: Untagged
+  m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -97,10 +97,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 83b03f4b64f3a4300977241958a1177f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: -4
+  speed: -6
   bullet: {fileID: 0}
-  timerMin: 5
-  timerMax: 25
+  timerMin: 3
+  timerMax: 7
   canFireBullets: 0
 --- !u!61 &7465584760915836593
 BoxCollider2D:

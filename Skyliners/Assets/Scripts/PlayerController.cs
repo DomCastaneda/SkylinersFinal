@@ -49,7 +49,8 @@ public class PlayerController : MonoBehaviour
                 stamText.GetComponent<stamina_controller>().UpdateStamina();
             }
 
-        }else if(stamina <= 0)
+        }
+        else if(stamina <= 0)
         {
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
@@ -71,7 +72,6 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.tag == "Gem")
         {
-            Destroy(collision.gameObject);
             scoreText.GetComponent<ScoreController>().score += 1;
             scoreText.GetComponent<ScoreController>().UpdateScore();
         }

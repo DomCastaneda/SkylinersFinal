@@ -11,8 +11,8 @@ public class EnemyController : MonoBehaviour
     private float maxTimerBullet;
     public GameObject bullet;
 
-    public float timerMin = 5f;
-    public float timerMax = 25f;
+    public float timerMin = 2f;
+    public float timerMax = 7f;
     public bool canFireBullets = true;
 
     // Start is called before the first frame update
