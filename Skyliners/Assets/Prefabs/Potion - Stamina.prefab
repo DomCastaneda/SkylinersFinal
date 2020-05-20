@@ -14,7 +14,8 @@ GameObject:
   - component: {fileID: 7590513942429949050}
   - component: {fileID: 7590513942429949051}
   - component: {fileID: 7590513942429949054}
-  m_Layer: 0
+  - component: {fileID: 2073815727126880940}
+  m_Layer: 13
   m_Name: Potion - Stamina
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -162,4 +163,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   potionType: 0
-  potionModAmount: 50
+  potionModAmount: 20
+--- !u!114 &2073815727126880940
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7590513942429949048}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 964bcffe5fa3146088b8bc2d98cf207b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  floatingMax: 1.25
+  floatingDir: 0.1
