@@ -16,6 +16,9 @@ public class PlayerController : MonoBehaviour
 
     public AudioClip jumpClip;
 
+    public bool hasStaminaPotion = false;
+    public int potionModAmount = 0;
+
     //main audio
     public AudioClip mainAudio;
 
@@ -43,10 +46,16 @@ public class PlayerController : MonoBehaviour
                 stamText.GetComponent<stamina_controller>().UpdateStamina();
             }
 
-        }else if(stamina == 0)
+        }else if(stamina <= 0)
         {
 
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+
+        if (hasStaminaPotion)
+        {
+            stamText.GetComponent<stamina_controller>().stamina += potionModAmount;
+            hasStaminaPotion = false;
         }
     }
     private void OnCollisionEnter2D(Collision2D collision)
