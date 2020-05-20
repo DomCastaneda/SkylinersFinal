@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Coin
   - Gem
+  - Win
   layers:
   - Default
   - TransparentFX
@@ -23,7 +24,7 @@ TagManager:
   - Heli
   - Potion
   - Gem
-  - 
+  - WinGem
   - 
   - 
   - 
