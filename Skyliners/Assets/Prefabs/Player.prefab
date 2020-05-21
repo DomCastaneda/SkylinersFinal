@@ -119,8 +119,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   velocityUp: 3
-  velocityRight: 1.5
+  velocityRight: 2
   stamina: 100
+  score: 0
   jumpClip: {fileID: 0}
   hasStaminaPotion: 0
   potionModAmount: 0
