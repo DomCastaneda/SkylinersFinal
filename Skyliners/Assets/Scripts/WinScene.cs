@@ -7,12 +7,12 @@ public class WinScene : MonoBehaviour
 {
     public void StartAgain()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
     }
 
     public void BackMain()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 2);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 3);
     }
 
     public void Exit()
