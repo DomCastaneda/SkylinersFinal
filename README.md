@@ -1,6 +1,6 @@
 # SkylinersFinal
 Group: Dominic Castaneda
-            Noaki Kita
+            Naoki Kita
 
 Code Used From:
     Platormers
