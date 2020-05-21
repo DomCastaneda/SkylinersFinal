@@ -75,5 +75,9 @@ public class PlayerController : MonoBehaviour
             scoreText.GetComponent<ScoreController>().score += 1;
             scoreText.GetComponent<ScoreController>().UpdateScore();
         }
+        if (collision.gameObject.tag == "Win")
+        {
+            //SceneManager.LoadScene("WinScene");
+        }
     }
 }
