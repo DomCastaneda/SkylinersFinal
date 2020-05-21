@@ -77,7 +77,7 @@ public class PlayerController : MonoBehaviour
         }
         if (collision.gameObject.tag == "Win")
         {
-            //SceneManager.LoadScene("WinScene");
+            SceneManager.LoadScene("WinScene");
         }
     }
 }
